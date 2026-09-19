@@ -138,7 +138,7 @@ jobs:
         uses: aquasecurity/trivy-action@v0.36.0
         with:
           scan-type: image
-          image-ref: adijaiswal/backend:${{ env.IMAGE_TAG }}
+          image-ref: san21doc/backend:${{ env.IMAGE_TAG }}
           format: table
           exit-code: '0'                 # set to '1' to fail on vulns
           ignore-unfixed: true
